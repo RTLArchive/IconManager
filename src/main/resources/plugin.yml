@@ -1,0 +1,11 @@
+name: IconManager
+author: drtshock
+version: ${project.version}
+main: io.snw.iconmanager.IconManager
+commands:
+  iconmanager:
+    description: Default command for IconManager
+    permission: iconmanager.admin
+    usage: /<command> <reload | info>
+
+    

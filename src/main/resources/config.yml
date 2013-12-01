@@ -1,0 +1,11 @@
+# IconManager by drtshock
+# Manage your server-icon with ease!
+
+
+# Made with love <3
+
+# Should we check for updates?
+check-update: true
+
+# Should we download updates?
+download-update: true
