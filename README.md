@@ -1,4 +1,4 @@
 IconManager
 =============
 
-Manager your server icon with ease!
+Manager your server icon with ease.
