@@ -23,10 +23,11 @@ public class ImageGenerator {
             BufferedImage image = ImageIO.read(url);
 
             img = image.getSubimage(8, 8, 8, 8); //head c:
-            //goggles = image.getSubimage(48, 8, 8, 8); //should return the goggles, if I wouldn't do this then my skin looks retard ._.
+            goggles = image.getSubimage(40, 8, 8, 8); //should return the goggles, if I wouldn't do this then my skin looks retard ._.
 
             BufferedImage finalImage = new BufferedImage(64, 64, Image.SCALE_SMOOTH);
-            finalImage.getGraphics().drawImage(img, 0, 0, 64, 64, null);
+            finalImage.getGraphics().drawImage(img, 0, 0, 64, 64, null); //render head
+            finalImage.getGraphics().drawImage(goggles, 0, 0, 64, 64, null); //render goggles
 
             return finalImage;
         } catch (MalformedURLException e) {
