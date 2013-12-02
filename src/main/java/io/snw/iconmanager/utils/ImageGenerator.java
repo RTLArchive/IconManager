@@ -14,11 +14,13 @@ public class ImageGenerator {
      * @param player The name of the player
      * @return A head-image.
      */
-    public static BufferedImage generateImage(String player){
+    public static BufferedImage generateImage(String player) {
 
         Image img;
-        Image goggles;
+        Image goggles
+                ;
         try {
+
             URL url = new URL("http://s3.amazonaws.com/MinecraftSkins/" + player + ".png");
             BufferedImage image = ImageIO.read(url);
 

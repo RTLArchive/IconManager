@@ -7,6 +7,8 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.ServerListPingEvent;
 
+import java.util.List;
+
 public class PingListener implements Listener {
 
     private IconManager plugin;
@@ -19,7 +21,7 @@ public class PingListener implements Listener {
     public void onPing(ServerListPingEvent event) {
         //an example
         try {
-            event.setServerIcon(Bukkit.loadServerIcon(ImageGenerator.generateImage("drtshock")));
+            event.setServerIcon(Bukkit.loadServerIcon(ImageGenerator.generateImage("CaptainBern")));
         } catch (Exception e) {
             //oh noes! D: we failed!
             e.printStackTrace();
